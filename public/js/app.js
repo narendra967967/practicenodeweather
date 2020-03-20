@@ -3,7 +3,7 @@ wform.addEventListener('submit', (e) => {
     e.preventDefault()
     document.getElementById('msg').innerHTML = 'Finding weather...'
     const location = document.querySelector('input').value
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
 
         response.json().then((data) => {
             if (data.error) {

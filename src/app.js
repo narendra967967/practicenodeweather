@@ -4,8 +4,8 @@ const hbs = require('hbs')
 const gutil = require('./geocode.js')
     // we need to do this to user express
 const app = express()
-
-// setting path
+const port = process.env.Port || 3000
+    // setting path
 const vpath = path.join(__dirname, '../templates/views')
 const prtpath = path.join(__dirname, '../templates/partials')
 app.set('view engine', 'hbs')
@@ -87,6 +87,6 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.send('This page do not exists. 404.')
 })
-app.listen(3000, () => {
-    console.log('Server is up...')
+app.listen(port, () => {
+    console.log('Server is up... ' + port)
 })
