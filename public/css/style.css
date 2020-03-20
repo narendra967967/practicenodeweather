@@ -1,0 +1,48 @@
+body {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.htitlw {
+    color: cadetblue;
+}
+
+.nav {
+    background-color: darkcyan;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.nav>a {
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: darkcyan;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+
+.wrapper {
+    height: 490px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid darkcyan;
+}
+
+button {
+    padding: 5px;
+    background-color: darkcyan;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
